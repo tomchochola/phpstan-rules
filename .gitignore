@@ -1,0 +1,12 @@
+# generic
+.DS_Store
+.idea
+.vscode
+
+# node
+node_modules
+package-lock.json
+
+# composer
+vendor
+composer.lock
