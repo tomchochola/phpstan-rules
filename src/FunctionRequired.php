@@ -50,8 +50,14 @@ class FunctionRequired implements Rule
         }
 
         if (! $node instanceof Node\Expr\Closure && ! $node instanceof Node\Expr\ArrowFunction) {
-            if ($node->getDocComment() === null) {
-                $messages[] = 'Function has no doc comment.';
+            if ($node instanceof Node\Stmt\ClassMethod) {
+                if (! \str_starts_with($node->name->name, 'test_') && $node->getDocComment() === null) {
+                    $messages[] = 'Function has no doc comment.';
+                }
+            } else {
+                if ($node->getDocComment() === null) {
+                    $messages[] = 'Function has no doc comment.';
+                }
             }
         }
 
