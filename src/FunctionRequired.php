@@ -39,8 +39,14 @@ class FunctionRequired implements Rule
             $messages[] = \sprintf('Parameter #%d of function has no typehint.', 1 + $index);
         }
 
-        if ($node->getReturnType() === null) {
-            $messages[] = 'Function has no return typehint.';
+        if ($node instanceof Node\Stmt\ClassMethod) {
+            if ($node->name->name !== '__construct' && $node->getReturnType() === null) {
+                $messages[] = 'Method has no return typehint.';
+            }
+        } else {
+            if ($node->getReturnType() === null) {
+                $messages[] = 'Function has no return typehint.';
+            }
         }
 
         if (! $node instanceof Node\Expr\Closure && ! $node instanceof Node\Expr\ArrowFunction) {
