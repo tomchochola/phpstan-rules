@@ -1,0 +1,16 @@
+{
+  "require-dev": {
+    "tomchochola/php-cs-fixer": "dev-main"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/tomchochola/php-cs-fixer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  }
+}

@@ -10,3 +10,13 @@ package-lock.json
 # composer
 vendor
 composer.lock
+
+# phpunit
+phpunit.xml
+.phpunit.result.cache
+
+# phpstan
+phpstan.neon
+
+# php-cs-fixer
+.php-cs-fixer.cache

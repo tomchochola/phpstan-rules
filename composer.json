@@ -1,0 +1,49 @@
+{
+  "name": "tomchochola/phpstan-rules",
+  "description": "PHPStan rules",
+  "license": "proprietary",
+  "type": "library",
+  "keywords": [
+    "tomchochola",
+    "phpstan-rules",
+    "phpstan"
+  ],
+  "authors": [
+    {
+      "name": "Tomáš Chochola",
+      "email": "chocholatom1997@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "phpstan/extension-installer": "^1.1",
+    "phpstan/phpstan": "^1.4",
+    "phpstan/phpstan-deprecation-rules": "^1.0",
+    "phpstan/phpstan-mockery": "^1.0",
+    "phpstan/phpstan-phpunit": "^1.0",
+    "phpstan/phpstan-strict-rules": "^1.1",
+    "spaze/phpstan-disallowed-calls": "^2.3"
+  },
+  "require-dev": {
+    "composer/composer": "^2.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Tomchochola\\PHPStanRules\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tomchochola\\PHPStanRules\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    },
+    "sort-packages": true
+  }
+}

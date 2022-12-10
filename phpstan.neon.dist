@@ -1,0 +1,6 @@
+includes:
+    - phpstan-rules.neon
+
+parameters:
+  paths:
+    - src
