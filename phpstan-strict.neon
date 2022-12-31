@@ -1,9 +1,0 @@
-rules:
-    - Tomchochola\PHPStanRules\FunctionRequired
-    - Tomchochola\PHPStanRules\PropertyRequired
-
-parameters:
-  level: max
-  checkMissingCallableSignature: true
-  checkUninitializedProperties: true
-  checkBenevolentUnionTypes: true
