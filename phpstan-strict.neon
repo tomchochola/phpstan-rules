@@ -5,6 +5,5 @@ rules:
 parameters:
   level: max
   checkMissingCallableSignature: true
-  checkTooWideReturnTypesInProtectedAndPublicMethods: true
   checkUninitializedProperties: true
   checkBenevolentUnionTypes: true

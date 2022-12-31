@@ -5,3 +5,4 @@ rules:
 parameters:
   level: max
   checkMissingCallableSignature: true
+  checkBenevolentUnionTypes: true
