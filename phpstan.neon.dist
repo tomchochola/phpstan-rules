@@ -1,6 +1,6 @@
 includes:
-    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
     - shared/phpstan/full.neon
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
     - vendor/spaze/phpstan-disallowed-calls/disallowed-dangerous-calls.neon
     - vendor/spaze/phpstan-disallowed-calls/disallowed-execution-calls.neon
     - vendor/spaze/phpstan-disallowed-calls/disallowed-insecure-calls.neon
