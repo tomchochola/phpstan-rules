@@ -1,0 +1,3 @@
+rules:
+    - Tomchochola\PHPStanRules\FunctionRequired
+    - Tomchochola\PHPStanRules\PropertyRequired

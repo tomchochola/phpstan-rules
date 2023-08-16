@@ -27,3 +27,9 @@ phpstan.neon
 /tools/*/node_modules
 /tools/*/package-lock.json
 /tools/*/composer.lock
+
+# blade
+*.blade.php
+
+# svg
+*.svg

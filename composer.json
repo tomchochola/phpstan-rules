@@ -26,19 +26,13 @@
     "spaze/phpstan-disallowed-calls": "^2.3"
   },
   "require-dev": {
-    "composer/composer": "^2.0",
-    "phpunit/phpunit": "^9.5"
+    "composer/composer": "^2.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
       "Tomchochola\\PHPStanRules\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Tomchochola\\PHPStanRules\\Tests\\": "tests/"
     }
   },
   "config": {

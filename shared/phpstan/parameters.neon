@@ -1,0 +1,7 @@
+parameters:
+  level: max
+  checkMissingCallableSignature: true
+  checkTooWideReturnTypesInProtectedAndPublicMethods: true
+  checkUninitializedProperties: true
+  reportAlwaysTrueInLastCondition: true
+  checkBenevolentUnionTypes: true
