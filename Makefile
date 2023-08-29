@@ -2,10 +2,10 @@
 SHELL := /bin/bash
 
 # Variables
-MAKE_PHP_8_1_BIN ?= php8.1
+MAKE_PHP_8_2_BIN ?= php8.2
 MAKE_COMPOSER_2_BIN ?= /usr/local/bin/composer2
 
-MAKE_PHP ?= ${MAKE_PHP_8_1_BIN} -d zend.assertions=1
+MAKE_PHP ?= ${MAKE_PHP_8_2_BIN}
 MAKE_COMPOSER ?= ${MAKE_PHP} ${MAKE_COMPOSER_2_BIN}
 
 # Default goal
@@ -17,30 +17,30 @@ check: stan lint audit
 
 .PHONY: audit
 audit: vendor tools
-	${MAKE_COMPOSER} audit --no-interaction
+	${MAKE_COMPOSER} audit
 
 .PHONY: stan
 stan: vendor
-	${MAKE_PHP} vendor/bin/phpstan analyse --no-progress --no-interaction
+	${MAKE_PHP} vendor/bin/phpstan analyse
 
 .PHONY: lint
 lint: vendor tools
-	${MAKE_COMPOSER} validate --strict --no-interaction
+	${MAKE_COMPOSER} validate --strict
 	"tools/prettier-lint/node_modules/.bin/prettier" -c .
-	${MAKE_PHP} tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --dry-run --diff --no-interaction
+	${MAKE_PHP} tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --dry-run --diff
 
 .PHONY: fix
 fix: vendor tools
 	"tools/prettier-fix/node_modules/.bin/prettier" -w .
-	${MAKE_PHP} tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --no-interaction
+	${MAKE_PHP} tools/php-cs-fixer/vendor/bin/php-cs-fixer fix
 
 .PHONY: composer
 composer:
-	${MAKE_COMPOSER} install -o --no-progress --no-interaction
+	${MAKE_COMPOSER} install
 
 .PHONY: composer-no-dev
 composer-no-dev:
-	${MAKE_COMPOSER} install --no-dev -a --no-progress --no-interaction
+	${MAKE_COMPOSER} install --no-dev -a
 
 .PHONY: clean-composer
 clean-composer:
@@ -48,7 +48,7 @@ clean-composer:
 
 .PHONY: update-composer
 update-composer: clean-composer
-	${MAKE_COMPOSER} update -o --no-progress --no-interaction
+	${MAKE_COMPOSER} update
 
 .PHONY: clean-tools
 clean-tools:
@@ -74,13 +74,13 @@ update-full: update
 tools: tools/prettier-lint/node_modules/.bin/prettier tools/prettier-fix/node_modules/.bin/prettier tools/php-cs-fixer/vendor/bin/php-cs-fixer
 
 tools/prettier-lint/node_modules/.bin/prettier:
-	npm --prefix=tools/prettier-lint update --no-progress
+	npm --prefix=tools/prettier-lint update
 
 tools/prettier-fix/node_modules/.bin/prettier:
-	npm --prefix=tools/prettier-fix update --no-progress
+	npm --prefix=tools/prettier-fix update
 
 vendor:
-	${MAKE_COMPOSER} update -o --no-progress --no-interaction
+	${MAKE_COMPOSER} update
 
 tools/php-cs-fixer/vendor/bin/php-cs-fixer:
-	${MAKE_COMPOSER} --working-dir=tools/php-cs-fixer update -o --no-progress --no-interaction
+	${MAKE_COMPOSER} --working-dir=tools/php-cs-fixer update

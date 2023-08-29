@@ -1,16 +1,22 @@
 {
+  "require": {
+    "php": "^8.2"
+  },
   "require-dev": {
+    "composer/composer": "^2.5",
     "tomchochola/php-cs-fixer": "dev-main"
   },
   "repositories": [
     {
-      "type": "vcs",
-      "url": "https://github.com/tomchochola/php-cs-fixer"
+      "type": "git",
+      "url": "git@github.com:tomchochola/php-cs-fixer.git"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
     "sort-packages": true
   }
 }
