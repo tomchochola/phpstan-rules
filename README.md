@@ -1,4 +1,10 @@
+🍵 **Tchi Signature**: _"Welcome to the Tchi Universe: The Future of Coding, by Tomáš Chochola."_
+
 # Tomchochola's PHPStan Rules - The Road to Flawless PHP Code 🛠️
+
+[![PHP 8.2](https://img.shields.io/badge/PHP-8.2-blue.svg)](https://www.php.net/)
+[![Laratchi](https://img.shields.io/badge/Laratchi-orange.svg)](https://github.com/tomchochola/laratchi)
+[![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE.md)
 
 > **Pro Tip:** If you're looking for a complete, feature-rich PHP development experience, consider exploring our premium projects [Laratchi](https://github.com/tomchochola/laratchi) and [Laratchi Boilerplate](https://github.com/tomchochola/laratchi-boilerplate).
 
@@ -28,8 +34,8 @@ This PHPStan rules library is a streamlined showcase of the rigorous code qualit
      },
      "repositories": [
        {
-         "type": "git",
-         "url": "git@github.com:tomchochola/phpstan-rules.git"
+         "type": "vcs",
+         "url": "https://github.com/tomchochola/phpstan-rules.git"
        }
      ],
      "minimum-stability": "stable",
@@ -158,10 +164,23 @@ Here's why [Laratchi](https://github.com/tomchochola/laratchi) and [Laratchi Boi
 - **Input Assertion & Parsing**: Effortless user input validation and sanitation.
 - **Full PHPStan Static Analysis**: Not just function and property checks, but a whole lot more!
 
-## Contributing & Support
-
-Contributions are welcome! Please feel free to submit a pull request or give us a star ⭐ if you find this library useful.
-
 ## Unlock Full Potential with Laratchi
 
 For the ultimate PHP development experience, check out [Laratchi](https://github.com/tomchochola/laratchi) and [Laratchi Boilerplate](https://github.com/tomchochola/laratchi-boilerplate).
+
+## 💼 Contact
+
+- 👤 [Tomáš Chochola](mailto:chocholatom1997@gmail.com)
+- 📧 [chocholatom1997@gmail.com](mailto:chocholatom1997@gmail.com)
+
+## 🎉 Contributing
+
+Due to the proprietary nature, contributions are not accepted. If you have issues or feature requests, please contact the author.
+
+## ⚖️ License
+
+All rights reserved by Tomáš Chochola. For detailed licensing information, refer to the [License](LICENSE.md) file.
+
+> ⚠️ Disclaimer: Before using, make sure to read the [License](LICENSE.md) and adhere strictly to its terms. Failure to comply will result in license revocation and may attract legal actions.
+
+🔥 **Don't just build applications, build experiences with Tchi.** 🔥
