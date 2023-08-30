@@ -8,8 +8,8 @@
   },
   "repositories": [
     {
-      "type": "git",
-      "url": "git@github.com:tomchochola/php-cs-fixer.git"
+      "type": "vcs",
+      "url": "https://github.com/tomchochola/php-cs-fixer.git"
     }
   ],
   "minimum-stability": "stable",
