@@ -63,13 +63,6 @@ update: update-tools update-composer
 .PHONY: clean
 clean: clean-tools clean-composer
 
-# Aliases
-.PHONY: ci
-ci: check
-
-.PHONY: update-full
-update-full: update
-
 # Dependencies
 tools: tools/prettier-lint/node_modules/.bin/prettier tools/prettier-fix/node_modules/.bin/prettier tools/php-cs-fixer/vendor/bin/php-cs-fixer
 
@@ -80,7 +73,7 @@ tools/prettier-fix/node_modules/.bin/prettier:
 	npm --prefix=tools/prettier-fix update
 
 vendor:
-	${MAKE_COMPOSER} update
+	${MAKE_COMPOSER} install
 
 tools/php-cs-fixer/vendor/bin/php-cs-fixer:
 	${MAKE_COMPOSER} --working-dir=tools/php-cs-fixer update
