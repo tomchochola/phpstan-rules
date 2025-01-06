@@ -1,7 +1,7 @@
 {
   "name": "tomchochola/phpstan-rules",
   "description": "PHPStan rules",
-  "license": "proprietary",
+  "license": "CC-BY-ND-4.0",
   "type": "library",
   "keywords": [
     "tomchochola",
