@@ -1,11 +1,13 @@
-# 🚨 This Project is Deprecated 🚨
+# 🚨 Deprecated Project🚨
 
-This repository/library/project has reached its **End of Life (EOL)** and is no longer maintained or updated.
+**This project is no longer maintained and will not receive updates or support.**
 
-### Please switch to the recommended alternative: **Premierstacks**
+We strongly encourage users to transition to a modern, actively maintained alternative provided by Premierstacks.
 
-Premierstacks offers an actively maintained and improved replacement for this project, ensuring better performance, security, and long-term support.
+## Recommended Alternative
 
-[https://github.com/premierstacks](https://github.com/premierstacks)
+**[Premierstacks Solution → PHPStan Stack](https://github.com/premierstacks/phpstan-stack)**
 
-Thank you for your understanding and support.
+Premierstacks offers a complete ecosystem of high-quality libraries, templates, and tools designed to streamline development workflows and ensure long-term maintainability.
+
+Thank you for using this project in the past, and we hope you find Premierstacks solutions valuable for your future development needs!
